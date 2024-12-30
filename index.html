@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are dead.</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+  </head>
+  <body style="align: center; ">
+    <div class="volume-slider" style="align: right;">
+    
+    <input type="range" id="volume-slider" min="0" max="100" value="100">
+    
+    </div>
+    
+    <audio id="kms" autoplay loop>
+        <source src="https://file.garden/Z2TMA_hV5hLO-3cY/Mr%20kill%20myself%20only%20the%20ambient%20parts%20pitched%20down.mp3" type="audio/mp3">
+    </audio>
+    
+    <script type="text/javascript">
+    
+    let volumeSlider = document.getElementById('volume-slider');
+    
+    function setGlobalVolume(value) {
+        let mediaElements = document.querySelectorAll('audio, video');
+        
+        mediaElements.forEach(function(mediaElement) {
+            mediaElement.volume = value / 100;
+        });
+    }
+    
+    volumeSlider.addEventListener("input", function(e) {
+      
+        let volume = e.currentTarget.value;
+        setGlobalVolume(volume);
+    
+    });
+    
+    setGlobalVolume(volumeSlider.value);
+    
+    </script>
+    
+    <img src="/swims presents.png" align=center width="500" height=auto>
+    
+    <h1>I am dead</h1>
+    
+    <h3>and so are you.</h3>
+    
+    <p>This is no attempt at survival</p>
+    
+    <p>
+    this is a fascination with death.
+    </p>
+    
+    <h2>[Why should you care?]</h2>
+    
+    <img src="/rotating cube.gif">
+    
+    <!-- <video id='hls'  class="video-js vjs-default-skin" width="400" height="300" controls>
+      <source type="application/x-mpegURL" src="https://asp6.toonamiaftermath.com/livehttporigin/est/oTE4BT-ZHCfwM-chunklist.m3u8">
+    </video>
+    
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+
+    <script>
+    var player = videojs('hls-example');
+    player.play();
+    </script>
+    -->
+  
+  <h3> <a href="https://deejayswim.neocities.org/Blogz">Blogz</a> </h3> <h3> mUSIC </h3> <h3> proJects </h3> <h3> visual </h3> <h3> etc </h3>
+
+  </body>  
+</html>
