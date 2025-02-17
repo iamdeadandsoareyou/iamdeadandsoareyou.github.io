@@ -57,7 +57,7 @@ function App() {
                     </div>
                 </div>
 
-                <h5>
+                <h5 className={"top-image"}>
                     [built by swim]
                 </h5>
 
