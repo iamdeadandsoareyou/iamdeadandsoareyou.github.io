@@ -18,7 +18,7 @@ body {
 .top-image {
   position: absolute;
   z-index: 2;
-}}
+}
 
 .volume-slider {
   position: sticky;
