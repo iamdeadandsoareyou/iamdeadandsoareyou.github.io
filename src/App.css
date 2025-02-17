@@ -1,0 +1,52 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("my-react-app/public/fonts/HelveticaNeueCondensedBold.woff");
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000000;
+  color: white;
+  font-family: Helvetica;
+  text-align: center;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  grid-template-columns: auto auto auto;
+}
+
+.top-image {
+  position: absolute;
+  z-index: 2;
+}
+
+.volume-slider {
+  position: sticky;
+  width: 5vw;
+  height: 20vh;
+  left: 65vw;
+  top: 30vh;
+  margin-top: 0.1vh;
+  z-index: 2;
+}
+
+.parallax-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 320%; /* Adjust height to create a taller background for parallax effect */
+  background-image: url('/my-react-app/public/img/lightning thing.gif');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure background is behind content */
+}
