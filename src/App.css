@@ -14,7 +14,7 @@ body {
   padding-right: 10vw;
   grid-template-columns: auto auto auto;
 }
-@media only screen and (min-width: 801px) and (min-height: 651px){
+@media (min-width: 801px) and (min-height: 651px){
 .top-image {
   position: absolute;
   z-index: 2;
