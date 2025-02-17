@@ -51,7 +51,7 @@ function App() {
                         src="https://files.catbox.moe/p37mz9.mp3"
                         type="audio/mp3"/>
                 </audio>
-                <div style={{height: "100vh", width: "120vw", overflow: "hidden"}}>
+                <div style={{height: "120vh", width: "120vw", overflow: "hidden"}}>
                     <div style={{zIndex: "1", height: "120vh", width: "120vw", paddingTop: "15vh"}}>
                         <FloatingMenu/>
                     </div>
