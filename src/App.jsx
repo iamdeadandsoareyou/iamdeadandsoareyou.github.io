@@ -37,25 +37,26 @@ function App() {
 
     return (
         <>
-            <div className="App" style={{display: "flex", flexDirection: "column", gap: "10px", alignItems: "center"}}>
-                <div className="top-image">
-                    <img src={'/img/swims_presents.png'} alt={"swim logo"} style={{width: "35%", height: "35%", alignSelf: "center"}}/>
-                    <h2>I am dead.</h2>
-                    <h3>and so are you.</h3>
-                    <h4>This is no attempt at survival</h4>
-                    <h4>this is a fascination with death. </h4>
-                </div>
-                <VolumeSlider volume={volume} setVolume={setVolume} />
+            <div className="App" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <VolumeSlider volume={volume} setVolume={setVolume}/>
                 <audio ref={audioRef} id="kms" autoPlay loop>
                     <source
                         src="https://files.catbox.moe/p37mz9.mp3"
                         type="audio/mp3"/>
                 </audio>
-                <div style={{height: "100vh", width: "120vw", overflow: "hidden"}}>
-                    <div style={{zIndex: "1", height: "120vh", width: "120vw", paddingTop: "15vh"}}>
+                <div className="top-image">
+                    <img src={'/img/swims_presents.png'} alt={"swim logo"}
+                         style={{width: "35vw", height: "35vh", alignSelf: "center"}}/>
+                    <h2>I am dead.</h2>
+                    <h3>and so are you.</h3>
+                    <h4>This is no attempt at survival</h4>
+                    <h4>this is a fascination with death. </h4>
+
+
+                </div>
+                    <div style={{zIndex: "1", height: "120vh", width: "120vw", paddingTop: "0vh"}}>
                         <FloatingMenu/>
                     </div>
-                </div>
 
                 <h5>
                     [built by swim]
