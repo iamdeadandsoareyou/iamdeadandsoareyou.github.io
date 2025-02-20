@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFirstFont;
-  src: url("untitled2/public/fonts/HelveticaNeueCondensedBold.woff");
+  src: url("/public/fonts/HelveticaNeueCondensedBold.woff");
 }
 
 body {
@@ -15,9 +15,9 @@ body {
   grid-template-columns: auto auto auto;
 }
 
-.top-image {
-  position: absolute;
-  z-index: 2;
+.bottom-image {
+  position: relative;
+  z-index: 0;
 }
 
 .volume-slider {
@@ -27,7 +27,14 @@ body {
   left: 65vw;
   top: 30vh;
   margin-top: 0.1vh;
-  z-index: 2;
+  z-index: 3;
+}
+
+.fMenu{
+  overflow-y: hidden;
+  position: relative;
+  margin-top: -50vh;
+  margin-bottom: 0vh;
 }
 
 .parallax-container {
@@ -45,7 +52,7 @@ body {
   left: 0;
   width: 150%;
   height: 320%; /* Adjust height to create a taller background for parallax effect */
-  background-image: url('/my-react-app/public/img/lightning thing.gif');
+  background-image: url('/public/img/lightning thing.gif');
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensure background is behind content */

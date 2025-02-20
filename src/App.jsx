@@ -37,27 +37,24 @@ function App() {
 
     return (
         <>
-            <div className="App" style={{display: "flex", flexDirection: "column", gap: "10px", alignItems: "center"}}>
-                <div className="top-image">
-                    <img src={'/img/swims_presents.png'} alt={"swim logo"} style={{width: "35%", height: "35%", alignSelf: "center"}}/>
+            <div className="App" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <VolumeSlider volume={volume} setVolume={setVolume}/>
+                <div className={"bottom-image"} style={{zIndex: "0", marginTop: "-25vh"}}>
+                    <audio ref={audioRef} id="kms" autoPlay loop>
+                        <source
+                            src="https://files.catbox.moe/p37mz9.mp3"
+                            type="audio/mp3"/>
+                    </audio>
+                    <img src={'/img/swims_presents.png'} alt={"swim logo"} className="top-image"
+                         style={{width: "25%", height: "25%", alignSelf: "center"}}/>
                     <h2>I am dead.</h2>
                     <h3>and so are you.</h3>
                     <h4>This is no attempt at survival</h4>
                     <h4>this is a fascination with death. </h4>
+                    <div className={"fMenu"} style={{height: "140vh", width: "150vw"}}>
+                        <FloatingMenu/>
+                    </div>
                 </div>
-                <VolumeSlider volume={volume} setVolume={setVolume} />
-                <audio ref={audioRef} id="kms" autoPlay loop>
-                    <source
-                        src="https://files.catbox.moe/p37mz9.mp3"
-                        type="audio/mp3"/>
-                </audio>
-                <div style={{zIndex: "1", height: "120vh", width: "120vw", paddingTop: "30vh"}}>
-                    <FloatingMenu/>
-                </div>
-                <h5>
-                    [built by swim]
-                </h5>
-
             </div>
 
         </>

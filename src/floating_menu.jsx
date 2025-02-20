@@ -208,7 +208,7 @@ function Floating_Menu() {
                 intensity={1}
             />
             <pointLight position={[-10, -10, -10]} intensity={0.5} />
-            <Box position={[0, 0, 0]} isPointerDown={isPointerDown} />
+            <Box position={[0, 0, 0]} isPointerDown={isPointerDown} scale={0.95} />
             <EffectComposer>
                 <Bloom />
             </EffectComposer>
