@@ -39,7 +39,7 @@ function App() {
         <>
             <div className="App" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <VolumeSlider volume={volume} setVolume={setVolume}/>
-                <div className={"bottom-image"} style={{zIndex: "0", marginTop: "-25vh"}}>
+                <div className={"bottom-image"} style={{zIndex: "0"}}>
                     <audio ref={audioRef} id="kms" autoPlay loop>
                         <source
                             src="https://files.catbox.moe/p37mz9.mp3"
