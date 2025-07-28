@@ -15,7 +15,6 @@ function openLink(page_url) {
     return window.open(page_url);
 }
 
-
 function Box({ isPointerDown, ...props }) {
     const meshRef = useRef();
     const { mouse } = useThree();
@@ -35,7 +34,6 @@ function Box({ isPointerDown, ...props }) {
 
     //runs every frame makes an acceleration effect
     useFrame((state, delta) => {
-
         if (isPointerDown) {
             //changes speed of cube per mouse x and y
             moveSpeedX.current = -mouse.x * moveSpeedInitial;
@@ -55,7 +53,7 @@ function Box({ isPointerDown, ...props }) {
             mesh.quaternion.multiplyQuaternions(deltaX, mesh.quaternion);
             mesh.quaternion.multiplyQuaternions(deltaY, mesh.quaternion);
         } else {
-             /* this is necessary in order to avoid jerky motionjust didn't feel right without this bit of code*/
+             /* this is necessary in order to avoid jerky motion just didn't feel right without this bit of code*/
             // checks if the currrent movement speed is fast enough to where it still would need to apply damping
             if (
                 Math.abs(moveSpeedX.current) > minSpeedThreshold ||

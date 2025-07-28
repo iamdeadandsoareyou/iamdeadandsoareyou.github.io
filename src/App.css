@@ -21,7 +21,7 @@ body {
 }
 
 .volume-slider {
-  position: sticky;
+  position: fixed;
   width: 5vw;
   height: 20vh;
   left: 65vw;
