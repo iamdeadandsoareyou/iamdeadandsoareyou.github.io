@@ -31,10 +31,10 @@ function Box({ isPointerDown, ...props }) {
 
     const yVector = new Vector3(0, 1, 0); // Y-axis
     const xVector = new Vector3(1, 0, 0); // X-axis
+    const mesh = meshRef.current;
 
     //runs every frame makes an acceleration effect
     useFrame((state, delta) => {
-        const mesh = meshRef.current;
 
         if (isPointerDown) {
             //changes speed of cube per mouse x and y
